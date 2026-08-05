@@ -1,0 +1,42 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.navbar-logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar-menu a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-actions button {
+    background: transparent;
+    font-size: 22px;
+}

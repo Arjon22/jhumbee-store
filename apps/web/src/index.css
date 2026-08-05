@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #8b5e3c;
+    --secondary-color: #f8eee7;
+    --text-color: #222;
+    --light-text: #666;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
