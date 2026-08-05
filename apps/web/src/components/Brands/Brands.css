@@ -1,0 +1,33 @@
+.brands {
+    padding: 80px 70px;
+    background: white;
+}
+
+.brands .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.brand-card {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f3ee;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #555;
+    transition: 0.3s;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
