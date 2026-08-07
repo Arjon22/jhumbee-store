@@ -1,3 +1,5 @@
+/* Jhumbee Quiet Atelier hero: campaign imagery is bundled from src/assets for reliable local rendering. */
+import heroFashionImage from "../../assets/hero-fashion.png";
 import "./Hero.css";
 
 function Hero() {
@@ -31,7 +33,7 @@ function Hero() {
       <div className="hero-image">
 
         <img
-          src="/hero-fashion.png"
+          src={heroFashionImage}
           alt="Fashion collection"
         />
 
