@@ -10,8 +10,10 @@ function Products() {
   const categories = ["All pieces", "Clothing", "Shoes", "Bags"];
   useEffect(() => {
     const onSearch = (event: Event) => { setQuery(String((event as CustomEvent).detail || "")); setActiveCategory("All pieces"); };
+    const onCategory = (event: Event) => { setQuery(""); setActiveCategory(String((event as CustomEvent).detail || "All pieces")); };
     window.addEventListener("jhumbee:search", onSearch);
-    return () => window.removeEventListener("jhumbee:search", onSearch);
+    window.addEventListener("jhumbee:category", onCategory);
+    return () => { window.removeEventListener("jhumbee:search", onSearch); window.removeEventListener("jhumbee:category", onCategory); };
   }, []);
   const visibleProducts = useMemo(() => products.filter((product) => (activeCategory === "All pieces" || product.category === activeCategory) && `${product.name} ${product.category}`.toLowerCase().includes(query.toLowerCase())), [activeCategory, query]);
   return <section className="products">

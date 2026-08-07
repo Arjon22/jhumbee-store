@@ -55,3 +55,10 @@
     padding: 10px 25px;
     border-radius: 25px;
 }
+
+/* Clickable category-card reset and editorial action styling. */
+.category-card { width:100%; padding:0; display:block; border:0; background:#ddd; text-align:left; cursor:pointer; }
+.category-card img { display:block; transition:transform .45s cubic-bezier(.23,1,.32,1), opacity .2s ease; }
+.category-card:hover img { transform:scale(1.04); }
+.category-overlay span { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border:1px solid rgba(255,255,255,.75); color:white; font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
+.category-overlay span b { color:#d39a4a; font-size:17px; font-weight:400; }
