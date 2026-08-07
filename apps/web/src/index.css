@@ -27,3 +27,16 @@ button {
     cursor: pointer;
     font-family: inherit;
 }
+
+/* Jhumbee Quiet Atelier global finishing: anchored editorial flow and restrained studio footer. */
+html { scroll-behavior:smooth; scroll-padding-top:108px; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline:2px solid #d39a4a; outline-offset:4px; }
+.brand-footer { display:grid; grid-template-columns:1fr auto auto; align-items:end; gap:50px; padding:58px clamp(20px,7vw,90px) 30px; background:#2b241e; color:#f7f2eb; }
+.brand-footer strong { display:inline-flex; align-items:flex-start; font-size:27px; letter-spacing:-.08em; }
+.brand-footer strong span { width:8px; height:8px; margin:2px 0 0 5px; background:#d39a4a; }
+.brand-footer p { margin-top:10px; color:#b7a99b; font-size:12px; }
+.footer-links { display:flex; gap:24px; }
+.footer-links a { color:#d8cbbf; font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+.footer-links a:hover { color:#d39a4a; }
+.brand-footer small { color:#8f8174; font-size:10px; }
+@media (max-width:760px) { .brand-footer { grid-template-columns:1fr; gap:25px; padding:45px 20px 25px; } .footer-links { flex-wrap:wrap; gap:16px; } }
